@@ -6,6 +6,7 @@ export const HeaderCon = styled.header`
   justify-content: center;
   padding-top: 20px;
   margin: 0 auto;
+  position: relative;
   nav {
     display: flex;
     margin: 0 49px 0 130px;
@@ -25,6 +26,7 @@ export const List = styled.ul`
     text-decoration: none;
     font-size: 14px;
     font-weight: 400;
+    margin-left: 30px;
   }
   p {
     color: #d46bfe;
@@ -49,7 +51,7 @@ export const StyleElipse = styled.img`
 `;
 
 export const StyleElipseDiv = styled.div`
-  width: 2178px;
+  width: 1228px;
   height: 1047px;
   flex-shrink: 0;
   position: absolute;
