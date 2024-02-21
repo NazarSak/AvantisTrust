@@ -3,7 +3,13 @@ import PleanetTwo from "../../assets/Img/planetTwo.png";
 import PleanetThree from "../../assets/Img/planetThree.png";
 import PleanetFour from "../../assets/Img/planetFour.png";
 import PleanetFive from "../../assets/Img/planetFive.png";
+
 import LinePOne from "../../assets/Svg/LinePOne.svg";
+import LinePTwo from "../../assets/Svg/LinePTwo.svg";
+import LinePThree from "../../assets/Svg/LinePThree.svg";
+import LinePFour from "../../assets/Svg/LinePFour.svg";
+import LinePFive from "../../assets/Svg/LinePFive.svg";
+
 import StarsBack from "../../assets/Img/BackStars.png";
 
 import {
@@ -37,10 +43,25 @@ export const SecondSection = () => {
         <PlanetsCon>
           <ul>
             <li>
-              <PlanetImgOne src={PleanetOne} alt="" />
+              <PlanetImgOne src={PleanetOne} alt="PleanetOne" />
               <LineOne src={LinePOne} alt="" />
             </li>
-            <li></li>
+            <li>
+              <PlanetImgTwo src={PleanetTwo} alt="PleanetTwo" />
+              <LineTwo src={LinePTwo} alt="" />
+            </li>
+            <li>
+              <PlanetImgThree src={PleanetThree} alt="PleanetThree" />
+              <LineThree src={LinePThree} alt="" />
+            </li>
+            <li>
+              <PlanetImgFour src={PleanetFour} alt="PleanetFour" />
+              <LineFour src={LinePFour} alt="" />
+            </li>
+            <li>
+              <PlanetImgFive src={PleanetFive} alt="PleanetFive" />
+              <LineFive src={LinePFive} alt="" />
+            </li>
           </ul>
           <PlanetsConInfo>
             <h3>What is</h3>

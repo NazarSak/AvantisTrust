@@ -100,13 +100,37 @@ export const PlanetImgOne = styled.img`
   left: 100px;
   top: 0;
 `;
-export const PlanetImgTwo = styled.img``;
+export const PlanetImgTwo = styled.img`
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  top: -25px;
+  right: 369px;
+`;
 
-export const PlanetImgThree = styled.img``;
+export const PlanetImgThree = styled.img`
+  position: absolute;
+  width: 271.88px;
+  height: 324.53px;
+  top: 70px;
+  right: 130px;
+`;
 
-export const PlanetImgFour = styled.img``;
+export const PlanetImgFour = styled.img`
+  position: absolute;
+  width: 310.68px;
+  height: 250.61px;
+  bottom: 20px;
+  right: 310px;
+`;
 
-export const PlanetImgFive = styled.img``;
+export const PlanetImgFive = styled.img`
+  position: absolute;
+  width: 450px;
+  height: 370px;
+  left: 120px;
+  bottom: 50px;
+`;
 
 export const LineOne = styled.img`
   position: absolute;
@@ -114,10 +138,26 @@ export const LineOne = styled.img`
   top: 148px;
 `;
 
-export const LineTwo = styled.img``;
+export const LineTwo = styled.img`
+  position: absolute;
+  top: 210px;
+  right: 573px;
+`;
 
-export const LineThree = styled.img``;
+export const LineThree = styled.img`
+  position: absolute;
+  right: 370px;
+  top: 300px;
+`;
 
-export const LineFour = styled.img``;
+export const LineFour = styled.img`
+  position: absolute;
+  bottom: 245px;
+  right: 515px;
+`;
 
-export const LineFive = styled.img``;
+export const LineFive = styled.img`
+  position: absolute;
+  left: 425px;
+  top: 360px;
+`;
