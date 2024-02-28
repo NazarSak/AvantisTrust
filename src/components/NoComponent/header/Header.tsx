@@ -1,9 +1,9 @@
-import Logo from "../../assets/Img/logo.png";
+// import Logo from "../../assets/Img/logo.png";
 import PlayMarket from "../../assets/Img/playMarket.png";
 import AppleMarket from "../../assets/Img/Apple.png";
 import {
   HeaderCon,
-  LogoImg,
+  // LogoImg,
   List,
   ContainerSocial,
   StyleElipseDiv,
@@ -12,7 +12,7 @@ import {
 export const Header = () => {
   return (
     <HeaderCon>
-      <LogoImg src={Logo} alt="Logo" />
+      {/* <LogoImg src={Logo} alt="Logo" /> */}
       <nav>
         <List>
           <li>
@@ -37,8 +37,8 @@ export const Header = () => {
         </List>
       </nav>
       <ContainerSocial>
-        <img src={PlayMarket} width="44" height="44" alt="PlayMarket" />
-        <img src={AppleMarket} width="44" height="44" alt="AppleMarket" />
+        {/* <img src={PlayMarket} width="44" height="44" alt="PlayMarket" /> */}
+        {/* <img src={AppleMarket} width="44" height="44" alt="AppleMarket" /> */}
       </ContainerSocial>
     </HeaderCon>
   );

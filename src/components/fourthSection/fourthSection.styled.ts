@@ -4,7 +4,7 @@ export const SectionContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-left: 265px;
+  margin-left: 165px;
   position: relative;
 `;
 
@@ -125,4 +125,5 @@ export const ConInfoSmall = styled.div`
 export const IpadImg = styled.img`
   width: 520px;
   height: 519px;
+  margin-left: -50px;
 `;

@@ -22,12 +22,19 @@ ul {
 
 h2,
 h3,
+h4,
 p,
 span,
 a {
   margin: 0;
   padding: 0;
   font-family: "Titillium Web", sans-serif;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
 }
 
 section {
