@@ -1,7 +1,10 @@
-import React, { useState } from "react";
-
+import { useState } from "react";
 import PurpleLine from "../../assets/Svg/PurpleLine.svg";
 import Table from "../../assets/Img/table.png";
+import Checkermark from "../../assets/Svg/checkermark.svg";
+import banner from "../../assets/Img/banner.png";
+import MoneroCoin from "../../assets/Img/Monero.png";
+import Bitcoin from "../../assets/Img/bitcoin.png";
 
 import {
   Section,
@@ -11,8 +14,15 @@ import {
   InvestingCon,
   Containers,
   FirstDiv,
+  SecondDiv,
+  InfoDiv,
+  ImgBanner,
+  TextInBanner,
   ButCon,
   Line,
+  LineTwo,
+  ImgBitcoin,
+  ImgMoneroCoin,
   Field,
   RangeCon,
   FirstNumber,
@@ -20,17 +30,17 @@ import {
   SubmitButton,
 } from "./fifthSection.styled";
 
-const FifthSection = () => {
+export const FifthSection = () => {
   const [count, setCount] = useState(100);
   const [inputValue, setInputValue] = useState(100);
 
-  const handleInputChange = (event) => {
+  const handleInputChange = (event: any) => {
     const newValue = parseInt(event.target.value);
     setInputValue(newValue);
     setCount(newValue);
   };
 
-  const handleKeyPress = (event) => {
+  const handleKeyPress = (event: any) => {
     const newValue = event.target.value;
     if (event.key === "Enter") {
       if (newValue >= 100 && newValue <= 1000000) {
@@ -43,7 +53,7 @@ const FifthSection = () => {
     }
   };
 
-  const handleSubmit = (event) => {
+  const handleSubmit = (event: any) => {
     event.preventDefault();
     setInputValue(100);
     setCount(100);
@@ -73,7 +83,7 @@ const FifthSection = () => {
         <InvestingCon>
           <h2>Calculate your potential profit</h2>
           <Containers>
-            <FirstDiv >
+            <FirstDiv>
               <h3>Select period</h3>
               <ButCon>
                 <button>50 days</button>
@@ -104,6 +114,45 @@ const FifthSection = () => {
               </RangeCon>
               <SubmitButton onClick={handleSubmit}>Invest now</SubmitButton>
             </FirstDiv>
+            <SecondDiv>
+              <InfoDiv>
+                <h3>Advance paynemt</h3>
+                <LineTwo />
+                <ul>
+                  <li>
+                    <img src={Checkermark} alt="Checkermark" />
+                    <h4>
+                      <span>15 $/</span> in a day
+                    </h4>
+                  </li>
+                  <li>
+                    <img src={Checkermark} alt="Checkermark" />
+                    <h4>
+                      <span>150 $/</span> in Week
+                    </h4>
+                  </li>
+                  <li>
+                    <img src={Checkermark} alt="Checkermark" />
+                    <h4>
+                      <span>1500 $/</span> per month
+                    </h4>
+                  </li>
+                  <li>
+                    <img src={Checkermark} alt="Checkermark" />
+                    <h4>
+                      <span>15000 $/</span>in year
+                    </h4>
+                  </li>
+                </ul>
+              </InfoDiv>
+              <ImgBanner src={banner} alt="" />
+              <TextInBanner>
+                <p>Daily percentage</p>
+                <span>1,2%</span>
+                <ImgBitcoin src={Bitcoin} alt="Bitcoin" />
+                <ImgMoneroCoin src={MoneroCoin} alt="MoneroCoin" />
+              </TextInBanner>
+            </SecondDiv>
           </Containers>
         </InvestingCon>
       </div>
@@ -111,4 +160,3 @@ const FifthSection = () => {
   );
 };
 
-export default FifthSection;

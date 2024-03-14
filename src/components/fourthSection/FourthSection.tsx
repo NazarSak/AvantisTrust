@@ -7,7 +7,6 @@ import Transparency from "../../assets/Img/transparency.png";
 import Risiks from "../../assets/Img/risiks.png";
 import Benefits from "../../assets/Img/benefits.png";
 import ElipseBack from "../../assets/Img/elipseBack.png";
-import Elipse from "../../assets/Img/Elipse.png";
 
 import {
   VectorLineImg,
@@ -22,7 +21,7 @@ import {
   StyleElipseDivImg,
 } from "./fourthSection.styled";
 
-const FourthSection = () => {
+export const FourthSection = () => {
   return (
     <section>
       <SectionContainer>
@@ -108,4 +107,4 @@ const FourthSection = () => {
   );
 };
 
-export default FourthSection;
+

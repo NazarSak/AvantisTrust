@@ -23,7 +23,7 @@ import {
   StyleElipseDiv,
 } from "./thirdSection.styled";
 
-const ThirdSection = () => {
+export const ThirdSection = () => {
   return (
     <Section>
       <StyleElipseDiv />
@@ -94,4 +94,3 @@ const ThirdSection = () => {
   );
 };
 
-export default ThirdSection;

@@ -51,6 +51,8 @@ export const InvestingCon = styled.div`
 `;
 
 export const Containers = styled.div`
+  display: flex;
+  gap: 47px;
   margin-top: 23px;
 `;
 
@@ -72,6 +74,103 @@ export const FirstDiv = styled.div`
     letter-spacing: 0em;
     text-align: left;
     color: #ffffff;
+  }
+`;
+
+export const SecondDiv = styled.div`
+  width: 383px;
+  height: 381px;
+  border-radius: 12px;
+  background: radial-gradient(
+    119.49% 119.49% at 2.96% 5.05%,
+    rgba(101, 101, 121, 0.8) 0%,
+    rgba(40, 40, 57, 0.8) 100%
+  );
+  box-shadow: 0px 4px 49px 0px #0000004d;
+  padding: 30px 38px 30px 38px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+`;
+
+export const InfoDiv = styled.div`
+  h3 {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #ffffff;
+    margin-right: auto;
+  }
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+  li {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  h4 {
+    font-family: "Titillium Web", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 23px;
+    color: white;
+  }
+  span {
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 29px;
+  }
+`;
+
+export const ImgBanner = styled.img`
+  position: absolute;
+  width: 459px;
+  height: 133px;
+  bottom: 0;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+`;
+export const ImgBitcoin = styled.img`
+  position: absolute;
+  width: 175px;
+  height: 175px;
+  right: -15px;
+  bottom: -50px;
+`;
+
+export const ImgMoneroCoin = styled.img`
+  position: absolute;
+  width: 92.34px;
+  height: 92.34px;
+  right: 90px;
+  bottom: -30px;
+`;
+
+export const TextInBanner = styled.div`
+  z-index: 1;
+  gap: 8px;
+  margin-top: 44px;
+  display: flex;
+  flex-direction: column;
+  margin-right: auto;
+  span {
+    font-size: 64px;
+    font-weight: 500;
+    line-height: 62px;
+  }
+  p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 13px;
   }
 `;
 
@@ -99,6 +198,12 @@ export const ButCon = styled.div`
 export const Line = styled.div`
   width: 492px;
   border: 1px solid #262637;
+`;
+
+export const LineTwo = styled.div`
+  width: 395px;
+  border: 1px solid #262637;
+  margin: 20px 0;
 `;
 
 export const RangeCon = styled.div`
@@ -162,7 +267,6 @@ export const Field = styled.input`
   padding-left: 13px;
   margin-top: 16px;
   color: #b6b6dd;
-  
 `;
 
 export const SubmitButton = styled.button`
