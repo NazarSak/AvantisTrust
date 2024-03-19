@@ -5,6 +5,8 @@ import { ThirdSection } from "./components/thirdSection/ThirdSection";
 import { FourthSection } from "./components/fourthSection/FourthSection";
 import { FifthSection } from "./components/fifthSection/FifthSection";
 import { SixthSection } from "./components/sixthSection/SixthSection";
+import { SeventhSection } from "./components/seventhSection/seventhSection";
+import { Footer } from "./components/NoComponent/Footer/Footer";
 
 import "./App.css";
 
@@ -18,6 +20,8 @@ function App() {
       <FourthSection />
       <FifthSection />
       <SixthSection />
+      <SeventhSection />
+      <Footer/>
     </div>
   );
 }
